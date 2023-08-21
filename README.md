@@ -20,5 +20,5 @@ Currently only works on linux as `./file.sh` doesn't work on windows?
 ```
 
 # TODO: 
-- This should probably download the dlls straight from vintagestory.net instead of requiring someone to upload them?
+- This should probably download the dlls straight from vintagestory.at instead of requiring someone to upload them?
 - How to do mod dependencies?
