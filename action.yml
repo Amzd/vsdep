@@ -11,6 +11,6 @@ runs:
   using: "composite"
   steps:
     - run: |
-        cd {{ github.action_path }}
+        cd ${{ github.action_path }}
         ./copy_version_to_vspath.sh "${{ inputs.version }}" "${{ inputs.vspath }}"
       shell: bash
