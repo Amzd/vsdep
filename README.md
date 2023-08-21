@@ -1,4 +1,4 @@
-# vsdep
+# VS Dependencies
 
 This action copies the dlls from vintage story to the specified path which allows for compilation of mods on CI.
 
