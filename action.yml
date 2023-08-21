@@ -10,5 +10,5 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - run: copy_version_to_vspath.sh "${{ inputs.version }}" "${{ inputs.vspath }}"
+    - run: ./copy_version_to_vspath.sh "${{ inputs.version }}" "${{ inputs.vspath }}"
       shell: bash
