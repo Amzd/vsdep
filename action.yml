@@ -1,0 +1,14 @@
+name: 'Copy dlls to VS path'
+inputs:
+  version:
+    description: 'Which VS version to use'
+    required: true
+    default: '1.18.8'
+  vspath:
+    description: 'Where to put the dlls. This depends on what path you use in your csproj file'
+    required: true
+runs:
+  using: "composite"
+  steps:
+    - run: copy_version_to_vspath.sh "${{ inputs.version }}" "${{ inputs.vspath }}"
+      shell: bash
